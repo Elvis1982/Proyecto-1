@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica de Html y Css</title>
     <link rel="shortcut icon" href="Imagenes/images.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="index.css">
-<!-- Primary Meta Tags -->
+    <link rel="stylesheet" href="./Css/index.css">
+    <link rel="stylesheet" href="./Css/g17.css">
+    <link rel="preconnet" href="https://fonts.googleapis.com">
+    <link rel="preconnet" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+
+
 <title>GitHub - Elvis1982/Proyecto-1</title>
 <meta name="title" content="GitHub - Elvis1982/Proyecto-1">
 <meta name="description" content="Contribute to Elvis1982/Proyecto-1 development by creating an account on GitHub.">
@@ -28,48 +36,45 @@
 </head>
 
 <body class="body">
-   <header class="header">
-    <nav class="header-nav">
-      <div class="header-nav__container">
-        <a href="#iHero" class="header-nav__link-logo-container"><img src="Imagenes/napa_auto_care_center.jpg" alt="Logo de mi taller" width="108" height="32" class="header-nav__link-logo"></a>
+   <header class="header section--headed">
+    <nav class="nav">
+      <div class="container container--headed">
+        <a href="#iHero"><img src="Imagenes/napa_auto_care_center.jpg" alt="Logo de mi taller" width="108" height="32" class="nav__link-logo"></a>
 
-        <label for="menu" class="icon"><i class="bi bi-list"></i></label>
+        <label for="menu" class="menu-icon"><i class="bi bi-list"></i></label>
         <input type="checkbox" id="menu" class="menu-checkbox">
 
-        <ul class="header-nav__menu-list--menu hamburger"> 
+        <ul class="menu menu--hamburger"> 
           <li>
-            <a href="#iExperience" class="header-nav__menu-link">Experiencia</a>
+            <a href="#iWeeks" class="menu__link">Semanas</a>
           </li>
           <li>
-            <a href="#iContact" class="header-nav__menu-link">Contacto</a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/watch?v=c5verVk180w" target="_blank" rel="noopener noreferrer" class="header-nav__menu-link header-nav__menu-link-active">Elvis</a>
+            <a href="https://www.youtube.com/watch?v=c5verVk180w" target="_blank" rel="noopener noreferrer" class="menu__link menu__link--active">Elvis</a>
           </li>
         </ul>
       </div>  
     </nav>
    </header> 
    <main>
-    <article class="i-hero" id="iHero">
-      <div class="i-hero__container">
-        <div class="i-hero__info-container">
+    <article class="hero" id="iHero">
+      <div class="container container--hero">
+        <div class="card card--hero">
 
-          <h1 class="i-hero__info-title">Autoservicios Chavez</h1>
+          <h1 class="card__title card__title--hero">Autoservicios Chavez</h1>
 
-          <h2 class="i-hero__info-subtitle">Autoservicios Chavez especializado en el transporte de carga por carretera.</h2>
-          <p class="i.hero__info-paragraph">Fue creada y fundada el 03/02/2006, registrada dentro de las sociedades mercantiles y comerciales como una EMPRESA INDIVIDUAL DE RESP. LTDA.</p>
+          <h2 class="card__subtitle card__subtitle--hero">Autoservicios Chavez especializado en el transporte de carga por carretera.</h2>
+          <p class="card__paragraph card__paragraph--hero">Fue creada y fundada el 03/02/2006, registrada dentro de las sociedades mercantiles y comerciales como una EMPRESA INDIVIDUAL DE RESP. LTDA.</p>
 
-          <a href="https://www.youtube.com/watch?v=giLXc-skgQM" target="_blank" rel="noopener noreferrer" class="button button--primary">Contactenos aqui</a>
+          <a href="#iWeeks" class="button button--primary">Contactenos aqui</a>
         </div>
-        <div class="i-hero__img-container">
-          <img src="Imagenes/Todo-sobre-camiones.jpg" alt="Foto de la empresa" width="256" height="256" class="i-hero__img-pro">
+        <div class="hero__img-container">
+          <img src="Imagenes/Todo-sobre-camiones.jpg" alt="Foto de la empresa" width="256" height="256" class="hero__img-pro">
 
-          <figure class="i-hero__img-tech-container">
-           <img src="Imagenes/scania-logo.svg" alt="Scania" width="64" height="64" class="i-hero__img-tech">
-           <img src="Imagenes/volvo.svg" alt="Volvo" width="64" height="64" class="i-hero__img-tech">
-           <img src="Imagenes/mercedes-benz-1.svg" alt="Mercedes benz" width="64" height="64" class="i-hero__img-tech">
-           <img src="Imagenes/hyundai-automobiles-1.svg" alt="Hyundai" width="64" height="64" class="i-hero__img-tech">
+          <figure class="hero__img-tech-container">
+           <img src="Imagenes/scania-logo.svg" alt="Scania" width="64" height="64" class="hero__img-tech">
+           <img src="Imagenes/volvo.svg" alt="Volvo" width="64" height="64" class="hero__img-tech">
+           <img src="Imagenes/mercedes-benz-1.svg" alt="Mercedes benz" width="64" height="64" class="hero__img-tech">
+           <img src="Imagenes/hyundai-automobiles-1.svg" alt="Hyundai" width="64" height="64" class="hero__img-tech">
           </figure>
         </div>
       </div>
@@ -77,87 +82,22 @@
     <figure class="wave">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave__wave"><path fill="#0099ff" fill-opacity="1" d="M0,128L13.3,112C26.7,96,53,64,80,64C106.7,64,133,96,160,90.7C186.7,85,213,43,240,37.3C266.7,32,293,64,320,112C346.7,160,373,224,400,250.7C426.7,277,453,267,480,245.3C506.7,224,533,192,560,154.7C586.7,117,613,75,640,53.3C666.7,32,693,32,720,80C746.7,128,773,224,800,256C826.7,288,853,256,880,218.7C906.7,181,933,139,960,133.3C986.7,128,1013,160,1040,144C1066.7,128,1093,64,1120,37.3C1146.7,11,1173,21,1200,48C1226.7,75,1253,117,1280,144C1306.7,171,1333,181,1360,192C1386.7,203,1413,213,1427,218.7L1440,224L1440,320L1426.7,320C1413.3,320,1387,320,1360,320C1333.3,320,1307,320,1280,320C1253.3,320,1227,320,1200,320C1173.3,320,1147,320,1120,320C1093.3,320,1067,320,1040,320C1013.3,320,987,320,960,320C933.3,320,907,320,880,320C853.3,320,827,320,800,320C773.3,320,747,320,720,320C693.3,320,667,320,640,320C613.3,320,587,320,560,320C533.3,320,507,320,480,320C453.3,320,427,320,400,320C373.3,320,347,320,320,320C293.3,320,267,320,240,320C213.3,320,187,320,160,320C133.3,320,107,320,80,320C53.3,320,27,320,13,320L0,320Z"></path></svg>
     </figure>
-    <section id="iExperience" class="section section--secondary">
+    <section id="iWeeks" class="section section--secondary">
       <div class="container container--elements">
-        <h2 class="section__title">🔧Experiencia🔧</h2>
-        <div class="section__cards">
-          <div class="card-exp">
-            <!-- <h4 class="card-exp__period">julio 2021, presente</h4> -->
-            <h3 class="card-exp__company">Camiones</h3>
-            <!-- <h4 class="card-exp__role">Frontend Developer</h4> -->
-            <ul class="card-exp__activities">
-              <li class="card-exp__activity">Nos dedicamos a brindar soluciones en el transporte con una flota variada y moderna para atender ofrecer los más altos niveles de seguridad y confiabilidad.</li>
-               <li class="card-exp__activity"> Contamos con permisos, seguros y documentación en regla para ingresar a los principales proyectos en el país, lo que nos hace un aliado estratégico para cualquier empresa.</li>
-
-            </ul>
-
-          </div>
-          <div class="card-exp">
-            <!-- <h4 class="card-exp__period">septiembre 2021, presente</h4> -->
-            <h3 class="card-exp__company">Cama Bajas</h3>
-            <!-- <h4 class="card-exp__role">Docente Frontend</h4> -->
-
-            <ul class="card-exp__activities">
-              <li class="card-exp__activity">Contamos con unidades cama cunas, camas bajas, chatas y escoltas para el transporte de toda variedad de maquinaria y equipos sin importar las dimensiones o pesos.</li>
-              <li class="card-exp__activity">Tenemos experiencia y personal altamente capacitado para manejar la carga más compleja que nos encarguen transportar por las rutas más difíciles del país. Contamos con líneas modulares, plataformas extensibles, camas bajas extensibles.</li>
-
-            </ul>
-
-          </div>
-          <div class="card-exp">
-            <!-- <h4 class="card-exp__period">septiembre 2021, presente</h4> -->
-            <h3 class="card-exp__company">Transporte terreste + Fluvial</h3>
-            <!-- <h4 class="card-exp__role">Frontend Developer</h4> -->
-
-            <ul class="card-exp__activities">
-              <li class="card-exp__activity">Realizamos transporte en motonaves con destino Iquitos, desde los puertos de Pucallpa y/o Yurimaguas, disponibilidad de grúas en los puertos para los trasbordos y transportes terrestres en Iquitos.</li>
-              <li class="card-exp__activity">Consolidarnos como una organización líder en el transporte de carga a nivel nacional, trabajando constantemente para realizar operaciones de calidad.</li>
-            </ul>
-          </div>
-          <div class="card-exp">
-            <!-- <h4 class="card-exp__period">junio 2021, enero 2022</h4> -->
-            <h3 class="card-exp__company">Otros Servicios</h3>
-            <!-- <h4 class="card-exp__role">Docente</h4> -->
-
-            <ul class="card-exp__activities">
-              <li class="card-exp__activity">Servicio de montacargas y grúas para izajes , maniobras, carga y/o descarga.
-                Estibadores para carga y descarga.</li>
-              <li class="card-exp__activity">Estudio y verificación de rutas para transportes de cargas con dimensiones especiales.
-                Almacén de tránsito.</li>
-
-            </ul>
-
-          </div>
-
-        </div>
+        <h2 class="section__title">🔧Semanas🔧</h2>
        
-                <a href="https://www.youtube.com/watch?v=s6TtwR2Dbjg" target="_blank" rel="noopener noreferrer" class="button button--primary">Ver más experiencias</a>
+            <ul class="list">
+              <li class="list__item"> <a href="/semana-1/" class="link">Nos dedicamos a brindar soluciones en el transporte con una flota variada y moderna para atender ofrecer los más altos niveles de seguridad y confiabilidad.</a></li>
 
-             
-      </div>
+            </ul>
 
-    </section>
-    <figure class="wave wave--reverse">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L15,224C30,224,60,224,90,213.3C120,203,150,181,180,176C210,171,240,181,270,165.3C300,149,330,107,360,112C390,117,420,171,450,165.3C480,160,510,96,540,74.7C570,53,600,75,630,122.7C660,171,690,245,720,266.7C750,288,780,256,810,229.3C840,203,870,181,900,192C930,203,960,245,990,261.3C1020,277,1050,267,1080,245.3C1110,224,1140,192,1170,170.7C1200,149,1230,139,1260,154.7C1290,171,1320,213,1350,234.7C1380,256,1410,256,1425,256L1440,256L1440,320L1425,320C1410,320,1380,320,1350,320C1320,320,1290,320,1260,320C1230,320,1200,320,1170,320C1140,320,1110,320,1080,320C1050,320,1020,320,990,320C960,320,930,320,900,320C870,320,840,320,810,320C780,320,750,320,720,320C690,320,660,320,630,320C600,320,570,320,540,320C510,320,480,320,450,320C420,320,390,320,360,320C330,320,300,320,270,320C240,320,210,320,180,320C150,320,120,320,90,320C60,320,30,320,15,320L0,320Z"></path></svg>
-
-    </figure>
-    <section id="iContact" class="section">
-      <div class="container container--elements">
-        <h2 class="section__title">Contacto</h2>
-        <form class="form">
-          <input type="text" name="name" placeholder="Nombre" maxlength="255" class="form__input" required>
-          <input type="number" name="phone" placeholder="Celular" min="900000000" max="999999999" class="form__input" required >
-
-          <button class="button button--primary">Enviar</button>
-        </form>
-      </div>
+          </div>
 
     </section>
-
-
+   
    </main>
-   <footer>
-    <nav class="section section--headed">
+   <footer class="section--headed">
+    <nav class="nav">
       <div class="container container--elements">
         <ul class="menu">
           <li>
@@ -176,7 +116,7 @@
             <a href="https://twitter.com/?lang=es"><img src="Imagenes/twitter-3.svg" alt="twiter" width="24" height="24" class="menu__img"></a>
           </li>
         </ul>
-        <small><h3 class="sectiom__footer-title">
+        <small><h3 class="footer__title">
           Todos los derechos reservados © 2022 TRANSPEP - Desarrollado por Elvis Chavez
           <!-- <a href="https://www.youtube.com/watch?v=3PXJZITdWmg" target="_blank" rel="noopener noreferrer" class="section__footer-link">Base2</a>
           Todos los derechos reservados -->
